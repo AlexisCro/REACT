@@ -2,6 +2,8 @@ import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
+import Hello from "@/components/hello";
+import Navbar from "@/components/navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,6 +18,20 @@ export default function Home() {
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
         <div className={styles.description}>
+          <nav className={styles.navbar}>
+            <
+              Navbar
+            />
+          </nav>
+        </div>
+        <div>
+          <section className={styles.section}>
+            {
+              Hello("Alexis")
+            }
+          </section>
+
+          {/* { Hello('Alexis') }
           <p>
             Get started by editing&nbsp;
             <code className={styles.code}>pages/index.js</code>
@@ -36,10 +52,10 @@ export default function Home() {
                 priority
               />
             </a>
-          </div>
+          </div> */}
         </div>
 
-        <div className={styles.center}>
+        {/* <div className={styles.center}>
           <Image
             className={styles.logo}
             src="/next.svg"
@@ -107,7 +123,7 @@ export default function Home() {
               with&nbsp;Vercel.
             </p>
           </a>
-        </div>
+        </div> */}
       </main>
     </>
   );
