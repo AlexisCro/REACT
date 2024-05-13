@@ -2,12 +2,12 @@ import Head from "next/head";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import navStyles from "@/styles/Navbar.module.css";
-import Hello from "@/components/hello";
 import Navbar from "@/components/navbar";
+import AboutSection from "@/components/about";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Home() {
+export default function About() {
   return (
     <>
       <Head>
@@ -22,13 +22,9 @@ export default function Home() {
             < Navbar />
           </nav>
         </div>
-        <div>
-          <section className={styles.section}>
-            {
-              Hello("Alexis")
-            }
-          </section>
-        </div>
+        <section>
+          < AboutSection />
+        </section>
       </main>
     </>
   );

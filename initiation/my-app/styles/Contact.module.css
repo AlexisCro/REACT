@@ -1,0 +1,38 @@
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+}
+
+.section h1 {
+  font-size: 35px;
+  margin-bottom: 1rem;
+}
+
+.section > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.section > div input,
+.section > div textarea {
+  width: 50%;
+  height: 2rem;
+  margin-bottom: 1rem;
+}
+
+.section > div button {
+  width: 25%;
+  height: 2rem;
+  background-color: #f1f1f1;
+  border: none;
+  cursor: pointer;
+  color: black;
+}
